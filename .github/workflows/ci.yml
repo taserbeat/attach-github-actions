@@ -2,7 +2,6 @@ name: test before merging into master
 
 on:
   pull_request:
-    # https://zenn.dev/ryo_kawamata/articles/github-actions-specific-branch
     branches:
       - 'feature/**'
       - 'fix/**'
@@ -17,6 +16,8 @@ jobs:
         os: [macos-10.15]
         node: [12.x]
     runs-on: ${{ matrix.os }}
+    # https://zenn.dev/ryo_kawamata/articles/github-actions-specific-branch
+    if: contains(github.head_ref, 'feature/') || contains(github.head_ref, 'fix/') || contains(github.head_ref, 'hotfix/') || contains(github.head_ref, 'feature/release/v')
     steps:
       - name: Setup node
         uses: actions/setup-node@v2
