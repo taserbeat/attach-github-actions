@@ -2,7 +2,12 @@ name: test before merging into master
 
 on:
   pull_request:
-    branches: ['feature/**', 'fix/**', 'hotfix/**', 'release/v**']
+    # https://zenn.dev/ryo_kawamata/articles/github-actions-specific-branch
+    branches:
+      - 'feature/**'
+      - 'fix/**'
+      - 'hotfix/**'
+      - 'release/v**'
 
 jobs:
   test:
