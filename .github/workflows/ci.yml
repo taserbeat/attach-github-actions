@@ -3,10 +3,10 @@ name: test before merging into master
 on:
   pull_request:
     branches:
-      - feature/*
-      - fix/*
-      - hotfix/*
-      - release/v*
+      - "feature/*"
+      - "fix/*"
+      - "hotfix/*"
+      - "release/v*"
 
 jobs:
   test:
@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-10.15]
-        node: ["12"]
+        node: [12.x]
     runs-on: ${{ matrix.os }}
     environment: staging_environment
     steps:
