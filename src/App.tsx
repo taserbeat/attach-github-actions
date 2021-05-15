@@ -20,7 +20,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub add commit
+            GitHub add commit2
           </a>
           <span>, </span>
           <a
