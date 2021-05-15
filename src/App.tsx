@@ -20,7 +20,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            React
+            GitHub Actions
           </a>
           <span>, </span>
           <a
