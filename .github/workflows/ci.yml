@@ -16,7 +16,6 @@ jobs:
         os: [macos-10.15]
         node: [12.x]
     runs-on: ${{ matrix.os }}
-    environment: staging_environment
     steps:
       - name: Setup node
         uses: actions/setup-node@v2
