@@ -2,11 +2,11 @@ name: test before merging into master
 
 on:
   pull_request:
-    # branches:
-    #   - "feature/**"
-    #   - "fix/**"
-    #   - "hotfix/**"
-    #   - "release/v**}"
+    branches:
+      - "feature/*"
+      - "fix/*"
+      - "hotfix/*"
+      - "release/v*"
 
 jobs:
   test:
