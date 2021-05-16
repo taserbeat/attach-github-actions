@@ -10,7 +10,7 @@ jobs:
     name: test
     strategy:
       matrix:
-        os: [macos-10.15]
+        os: [ubuntu-18.04]
         node: [12.x]
     runs-on: ${{ matrix.os }}
     # https://zenn.dev/ryo_kawamata/articles/github-actions-specific-branch
