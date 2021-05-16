@@ -20,7 +20,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            masterへ直接プッシュ
+            アクションテスト13
           </a>
           <span>, </span>
           <a
