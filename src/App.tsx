@@ -20,7 +20,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            デプロイテスト
+            Yarnのキャッシュを最適化した
           </a>
           <span>, </span>
           <a
